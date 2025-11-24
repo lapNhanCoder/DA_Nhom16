@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace RandomPassword
 {
     internal class Rating
@@ -14,6 +14,18 @@ namespace RandomPassword
         private const string chuHoa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private const string so = "0123456789";
         private const string kyTu = "!@#$%^&*()-_=+[{]};:<>|./?";
+        //Hàm kiểm tra mật khẩu có rò rỉ hay không 
+        public bool KiemTraRoRi(string matKhau)
+        {
+            string filePath = "leaked.txt";
+            if (!File.Exists(filePath))
+            {
+                return false;
+            }
+            var leakedPasswords = File.ReadAllLines(filePath);
+            // Sử dụng String.Equals() để so sánh matKhau với từng mật khẩu rò rỉ
+            return leakedPasswords.Any(p => string.Equals(matKhau, p, StringComparison.OrdinalIgnoreCase));
+        }
         public int RatingPassword(string matKhau)
         {
             int score = 0; //biến điểm để đánh giá độ mạnh mật khẩu
@@ -63,7 +75,10 @@ namespace RandomPassword
             }
 
             //4.Phạt nếu nằm trong danh sách các mật khẩu phổ biến
-            //Chưa biết
+            if (KiemTraRoRi(matKhau))
+            {
+                score = 0;
+            }
 
             // Đảm bảo điểm không bị âm 
             if (score < 0)

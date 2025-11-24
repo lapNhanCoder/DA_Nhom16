@@ -312,6 +312,7 @@
             this.btnCopy1.TabIndex = 12;
             this.btnCopy1.Text = "Copy";
             this.btnCopy1.UseVisualStyleBackColor = true;
+            this.btnCopy1.Click += new System.EventHandler(this.btnCopy1_Click);
             // 
             // btnCopy5
             // 
@@ -322,6 +323,7 @@
             this.btnCopy5.TabIndex = 13;
             this.btnCopy5.Text = "Copy";
             this.btnCopy5.UseVisualStyleBackColor = true;
+            this.btnCopy5.Click += new System.EventHandler(this.btnCopy5_Click);
             // 
             // btnCopy3
             // 
@@ -332,6 +334,7 @@
             this.btnCopy3.TabIndex = 14;
             this.btnCopy3.Text = "Copy";
             this.btnCopy3.UseVisualStyleBackColor = true;
+            this.btnCopy3.Click += new System.EventHandler(this.btnCopy3_Click);
             // 
             // btnCopy6
             // 
@@ -342,6 +345,7 @@
             this.btnCopy6.TabIndex = 15;
             this.btnCopy6.Text = "Copy";
             this.btnCopy6.UseVisualStyleBackColor = true;
+            this.btnCopy6.Click += new System.EventHandler(this.btnCopy6_Click);
             // 
             // btnCopy4
             // 
@@ -352,6 +356,7 @@
             this.btnCopy4.TabIndex = 16;
             this.btnCopy4.Text = "Copy";
             this.btnCopy4.UseVisualStyleBackColor = true;
+            this.btnCopy4.Click += new System.EventHandler(this.btnCopy4_Click);
             // 
             // btnCopy2
             // 
@@ -362,6 +367,7 @@
             this.btnCopy2.TabIndex = 17;
             this.btnCopy2.Text = "Copy";
             this.btnCopy2.UseVisualStyleBackColor = true;
+            this.btnCopy2.Click += new System.EventHandler(this.btnCopy2_Click);
             // 
             // Form1
             // 

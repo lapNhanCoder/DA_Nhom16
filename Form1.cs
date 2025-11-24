@@ -32,7 +32,15 @@ namespace RandomPassword
             {
                 txt.Visible = false;
             }
-
+            List<Button> danhSachButton = new List<Button>()
+            {
+                btnCopy1, btnCopy2, btnCopy3,
+                btnCopy4, btnCopy5, btnCopy6,
+            };
+            foreach (Button btn in danhSachButton)
+            {
+                btn.Visible = false;
+            }
             checkThuong.Checked = false;
             checkHoa.Checked = false;
             checkSo.Checked = false;
@@ -70,13 +78,21 @@ namespace RandomPassword
                 cboSoLuong.SelectedItem = 0; //mặc định chọn 1 nếu chưa chọn
             }
 
+            const string FILE_MATKHAU = "passwords.txt"; //file lưu mật khẩu đã tạo
+            List<string> matKhauDaTao = new List<string>(); //list chứa các mật khẩu đã tạo
+            //Nếu file không tồn tại sẽ trả về một List<string> rỗng
+            if (System.IO.File.Exists(FILE_MATKHAU))
+            {
+                // Đọc tất cả các dòng từ file và thêm vào danh sách mật khẩu đã tạo
+                matKhauDaTao.AddRange(System.IO.File.ReadAllLines(FILE_MATKHAU));
+            }
             //Cho các Textbox chứa mật khẩu mới tạo vào 1 list
             List<TextBox> danhSachTextBox = new List<TextBox>() {
             txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
             txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
             };
 
-            List<string> matKhauDaTao = new List<string>(); // Danh sách tạm để lưu các mật khẩu đã sinh ra trong lần bấm này
+            List<string> matKhauLanNay = new List<string>(); // Danh sách tạm để lưu các mật khẩu đã sinh ra trong lần bấm này
 
             int soLuongCanTao = int.Parse(cboSoLuong.SelectedItem.ToString()); //biến chứa số lượng mật khẩu muốn tạo
             int i;
@@ -94,9 +110,12 @@ namespace RandomPassword
                     {
                         matKhauMoi = rp.TaoMatKhau(doDaiMatKhau, coThuong, coHoa, coSo, coKyTu);
                     }
-                    while (matKhauDaTao.Contains(matKhauMoi));
-
+                    while (matKhauDaTao.Contains(matKhauMoi)||matKhauLanNay.Contains(matKhauMoi));
+                    //kiểm tra trùng lặp với tất cả các mật khẩu đã tạo trước đó từ file
+                    
+                    //thêm mật khẩu mới vào danh sách mật khẩu đã tạo từ trước và mật khẩu tạo trong lần này
                     matKhauDaTao.Add(matKhauMoi);
+                    matKhauLanNay.Add(matKhauMoi);
 
                     danhSachTextBox[i].Text = matKhauMoi;
 
@@ -105,6 +124,20 @@ namespace RandomPassword
                 {
                     danhSachTextBox[i].Visible = false;
                     danhSachTextBox[i].Text = "";
+                }
+            }
+
+            //Ghi tất cả mật khẩu tạo mới lần này vào cuối file mà không làm mất các mật khẩu đã có
+            if (matKhauLanNay.Count > 0)
+            {
+                try
+                {
+                    System.IO.File.AppendAllLines(FILE_MATKHAU, matKhauLanNay);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi không ghi file mật khẩu!!");
                 }
             }
             try
@@ -158,13 +191,21 @@ namespace RandomPassword
                 txtDoDai.Text = "";
                 cboSoLuong.SelectedIndex = 0;
                 List<TextBox> danhSachTextBox = new List<TextBox>() {
-            txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
-            txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
-            };
-
+                txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
+                txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
+                };
                 foreach (TextBox txt in danhSachTextBox)
                 {
                     txt.Visible = false;
+                }
+                List<Button> danhSachButton = new List<Button>()
+                {
+                btnCopy1, btnCopy2, btnCopy3,
+                btnCopy4, btnCopy5, btnCopy6,
+                };  
+                foreach (Button btn in danhSachButton)
+                {
+                    btn.Visible = false;
                 }
                 checkThuong.Checked = false;
                 checkHoa.Checked = false;
@@ -194,13 +235,22 @@ namespace RandomPassword
                 txtDoDai.Text = "";
                 cboSoLuong.SelectedIndex = 0;
                 List<TextBox> danhSachTextBox = new List<TextBox>() {
-            txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
-            txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
-            };
+                txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
+                txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
+                };
 
                 foreach (TextBox txt in danhSachTextBox)
                 {
                     txt.Visible = false;
+                }
+                List<Button> danhSachButton = new List<Button>()
+                {
+                btnCopy1, btnCopy2, btnCopy3,
+                btnCopy4, btnCopy5, btnCopy6,
+                };
+                foreach (Button btn in danhSachButton)
+                {
+                    btn.Visible = false;
                 }
                 checkThuong.Checked = false;
                 checkHoa.Checked = false;
@@ -228,13 +278,22 @@ namespace RandomPassword
                 txtDoDai.Text = "";
                 cboSoLuong.SelectedIndex = 0;
                 List<TextBox> danhSachTextBox = new List<TextBox>() {
-            txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
-            txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
-            };
+                txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
+                txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
+                };
 
                 foreach (TextBox txt in danhSachTextBox)
                 {
                     txt.Visible = false;
+                }
+                List<Button> danhSachButton = new List<Button>()
+                {
+                btnCopy1, btnCopy2, btnCopy3,
+                btnCopy4, btnCopy5, btnCopy6,
+                };
+                foreach (Button btn in danhSachButton)
+                {
+                    btn.Visible = false;
                 }
                 checkThuong.Checked = false;
                 checkHoa.Checked = false;
@@ -261,13 +320,22 @@ namespace RandomPassword
                 txtDoDai.Text = "";
                 cboSoLuong.SelectedIndex = 0;
                 List<TextBox> danhSachTextBox = new List<TextBox>() {
-            txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
-            txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
-            };
+                txtRandomPassword1, txtRandomPassword2, txtRandomPassword3,
+                txtRandomPassword4, txtRandomPassword5, txtRandomPassword6,
+                };
 
                 foreach (TextBox txt in danhSachTextBox)
                 {
                     txt.Visible = false;
+                }
+                List<Button> danhSachButton = new List<Button>()
+                {
+                btnCopy1, btnCopy2, btnCopy3,
+                btnCopy4, btnCopy5, btnCopy6,
+                };
+                foreach (Button btn in danhSachButton)
+                {
+                    btn.Visible = false;
                 }
                 checkThuong.Checked = false;
                 checkHoa.Checked = false;
@@ -322,6 +390,36 @@ namespace RandomPassword
                     //set mặc định cho combobox là giá trị đầu khi mở form1
                 }
             }
+
+        private void btnCopy1_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword1);
         }
+
+        private void btnCopy2_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword2);
+        }
+
+        private void btnCopy3_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword3);
+        }
+
+        private void btnCopy4_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword4);
+        }
+
+        private void btnCopy5_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword5);
+        }
+
+        private void btnCopy6_Click(object sender, EventArgs e)
+        {
+            copy(txtRandomPassword6);
+        }
+    }
     }
 
