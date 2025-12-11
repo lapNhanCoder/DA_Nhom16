@@ -14,7 +14,6 @@ namespace RandomPassword
         private const string chuHoa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //hằng số chứa các ký tự hoa
         private const string so = "0123456789"; //hằng số chứa các ký tự số
         private const string kyTu = "!@#$%^&*()-_=+[{]};:<>|./?"; //hằng số chứa các ký tự đặc biệt
-                                                                  //Hàm kiểm tra sự rò rỉ của mật khẩu
        
         //Hàm tạo mật khẩu ngẫu nhiên 
         public string TaoMatKhau(int doDai, bool coThuong, bool coHoa, bool coSo, bool coKyTu)

@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace DoAnTinHoc
+
+namespace RandomPassword
 {
-    internal class Program
+    internal static class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
         [STAThread]
-        static void Main(string[] args)
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Khởi tạo và chạy Form MatKhau
-            // Tên class MatKhau phải khớp với tên file Form của bạn
-            Application.Run(new MatKhau());
+            Application.Run(new Form1());
         }
     }
 }
