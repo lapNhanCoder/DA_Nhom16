@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|solutionrelative:rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\randompassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|solutionrelative:randompassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|e:\\1. study with ny\\15. \u0111\u1ED3 \u00E1n tin h\u1ECDc\\randompassword\\randompassword\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B1EB0ED-5F17-40EE-A1F8-83DB86907182}|RandomPassword.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RandomPassword.cs",
+              "DocumentMoniker": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\RandomPassword.cs",
+              "RelativeDocumentMoniker": "RandomPassword.cs",
+              "ToolTip": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\RandomPassword.cs",
+              "RelativeToolTip": "RandomPassword.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T11:14:34.662Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Rating.cs",
+              "RelativeDocumentMoniker": "Rating.cs",
+              "ToolTip": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Rating.cs",
+              "RelativeToolTip": "Rating.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:12:57.618Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAgwIAAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:59:53.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\1. Study with Ny\\15. \u0110\u1ED3 \u00E1n tin h\u1ECDc\\RandomPassword\\RandomPassword\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T10:50:41.955Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
